@@ -2,7 +2,7 @@
 Este repositório contém uma análise detalhada sobre o mercado de trabalho para enfermeiros em Goiânia, baseado nos dados do CAGED (Cadastro Geral de Empregados e Desempregados).
 
 Objetivo:
-Celebrar e entender a trajetória dos enfermeiros, que arriscaram suas vidas durante a pandemia.
+Analisar o mercado de trabalho dos enfermeiros na cidade de Goiânia Goiás para avaliação do módulo de Hadoop da pós-graduação da INFNET
 
 Dados:
 Fonte principal dos dados é o CAGED. A base contém dados até maio de 2023, com uma tabela principal (Fato) e 22 tabelas dimensionais.
