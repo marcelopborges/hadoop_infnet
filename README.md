@@ -5,7 +5,7 @@ Objetivo:
 Analisar o mercado de trabalho dos enfermeiros na cidade de Goiânia Goiás para avaliação do módulo de Hadoop da pós-graduação da INFNET
 
 Dados:
-Fonte principal dos dados é o CAGED. A base contém dados até maio de 2023, com uma tabela principal (Fato) e 22 tabelas dimensionais.
+Fonte principal dos dados é o CAGED (http://pdet.mte.gov.br/microdados-rais-e-caged ou diretamente via FTP acessando ftp://ftp.mtps.gov.br/pdet/microdados/). A base utilizada contém dados até maio de 2023, com uma tabela principal (Fato) e 22 tabelas dimensionais.
 
 Ferramentas Utilizadas:
 
