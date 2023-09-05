@@ -10,8 +10,11 @@ Fonte principal dos dados é o CAGED (http://pdet.mte.gov.br/microdados-rais-e-c
 Ferramentas Utilizadas:
 
 Hadoop
+
 Hadoop HDFS
+
 Hadoop Hive
+
 Google Cloud Plataform (GCP)
 
 
