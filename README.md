@@ -17,6 +17,7 @@ Hadoop Hive
 
 Google Cloud Plataform (GCP)
 
+Python
 
 Principais Conclusões:
 
