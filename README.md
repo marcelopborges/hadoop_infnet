@@ -30,4 +30,4 @@ Desenvolvimento de um dashboard interativo que permite a filtragem por diferente
 Agradecimentos:
 Agradecemos à Infnet e ao professor André Ormastroni Victor por fornecer a oportunidade de aprender e aplicar o Hadoop em um contexto real.
 
-Link para o Estudo Completo: https://medium.com/p/e905dec146a3
+Link para o Estudo Completo: [https://medium.com/p/e905dec146a3](https://medium.com/@mrcl.pborges/e905dec146a3)https://medium.com/@mrcl.pborges/e905dec146a3
