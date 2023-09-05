@@ -1,0 +1,236 @@
+######TABELA FATO - CAGED#######
+inCREATE EXTERNAL TABLE caged (
+    `competenciamov` INT,
+    `regiao` INT,
+    `uf` INT,
+    `municipio` INT,
+    `secao` STRING,
+    `subclasse` INT,
+    `saldomovimentacao` INT,
+    `cbo2002ocupacao` INT,
+    `categoria` INT,
+    `graudeinstrucao` INT,
+    `idade` INT,
+    `horascontratuais` INT,
+    `racacor` INT,
+    `sexo` INT,
+    `tipomovimentacao` INT,
+    `ufnascimento` INT,
+    `salario` DOUBLE,
+    `tipodedeficiencia` INT,
+    `indtrabintermitente` INT,
+    `indtrabparcial` INT,
+    `tamestabjan` INT,
+    `indicadoraprendiz` INT,
+    `origemdainformacao` INT,
+    `competenciadec` INT,
+    `indicadordeforadoprazo` INT,
+    `unidadesalariocodigo` INT,
+    `valorsalariofixo` DOUBLE,
+     `competenciaexc` INT, 
+     `indicadordeexclusao` INT
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/caged/';
+
+######TABELAS DIMENSÃO######
+CREATE EXTERNAL TABLE unidadesalariocodigo (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/unidadesalariocodigo/';
+
+CREATE EXTERNAL TABLE tamestabjan (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/tamestabjan/';
+
+CREATE EXTERNAL TABLE origemdainformacao (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/origemdainformacao/';
+
+CREATE EXTERNAL TABLE indicadordeforadoprazo (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/indicadordeforadoprazo/';
+
+CREATE EXTERNAL TABLE indicadordeexclusao (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/indicadordeexclusao/';
+
+CREATE EXTERNAL TABLE indicadoraprendiz (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/indicadoraprendiz/';
+
+CREATE EXTERNAL TABLE tipomovimentacao (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/tipomovimentacao/';
+
+CREATE EXTERNAL TABLE tipoestabelecimento (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/tipoestabelecimento/';
+
+CREATE EXTERNAL TABLE tipoempregador (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/tipoempregador/';
+
+CREATE EXTERNAL TABLE tipodedeficiencia (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/tipodedeficiencia/';
+
+CREATE EXTERNAL TABLE sexo (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/sexo/';
+
+CREATE EXTERNAL TABLE racacor (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/racacor/';
+
+CREATE EXTERNAL TABLE indtrabparcial (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/indtrabparcial/';
+
+CREATE EXTERNAL TABLE indtrabintermitente (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/indtrabintermitente/';
+
+CREATE EXTERNAL TABLE graudeinstrucao (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/graudeinstrucao/';
+
+CREATE EXTERNAL TABLE uf (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/uf/';
+
+CREATE EXTERNAL TABLE subclasse (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/subclasse/';
+
+CREATE EXTERNAL TABLE secao (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/secao/';
+
+CREATE EXTERNAL TABLE municipio (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/municipio/';
+
+CREATE EXTERNAL TABLE cbo2002ocupacao (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/cbo2002ocupacao/';
+
+CREATE EXTERNAL TABLE categoria (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/categoria/';
+
+CREATE EXTERNAL TABLE regiao (
+    `Codigo` INT,
+    `Descricao` STRING
+)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ','
+STORED AS TEXTFILE
+LOCATION '/user/marcelo_borges/datasets/regiao/';
+
