@@ -1,5 +1,5 @@
 ######TABELA FATO - CAGED#######
-inCREATE EXTERNAL TABLE caged (
+CREATE EXTERNAL TABLE caged (
     `competenciamov` INT,
     `regiao` INT,
     `uf` INT,
